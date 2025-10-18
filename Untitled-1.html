@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SDG CLASSES — Learn. Grow. Achieve.</title>
+  <meta name="description" content="SDG Classes — quality tuition and coaching for competitive exams and school boards. Online & offline batches, experienced faculty, personalised attention." />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#0f1724;
+      --muted:#9aa6bd;
+      --accent:#0ea5e9; /* sky-blue */
+      --glass: rgba(255,255,255,0.04);
+      --radius:14px;
+      --maxw:1100px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;font-family:Inter,system-ui,Arial; background:linear-gradient(180deg,var(--bg),#07101a 60%); color:#e6eef8;
+      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; line-height:1.5;
+    }
+    .container{max-width:var(--maxw);margin:0 auto;padding:28px}
+
+    /* Header */
+    header{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;background:linear-gradient(135deg,var(--accent),#073b66);border-radius:12px;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 30px rgba(2,6,23,0.6)}
+    .logo svg{width:36px;height:36px}
+    .brand h1{font-size:18px;margin:0;letter-spacing:0.6px}
+    .brand p{margin:0;font-size:12px;color:var(--muted)}
+
+    nav{display:flex;gap:18px;align-items:center}
+    nav a{color:var(--muted);text-decoration:none;font-weight:600;padding:8px 10px;border-radius:10px}
+    nav a:hover{color:#fff;background:rgba(255,255,255,0.03)}
+    .cta{background:linear-gradient(90deg,var(--accent),#0369a1);padding:10px 14px;border-radius:12px;color:#021026;font-weight:700}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;padding:32px 0}
+    .hero-card{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:28px;border-radius:18px;box-shadow:0 10px 40px rgba(2,6,23,0.6)}
+    .kicker{display:inline-block;background:var(--glass);padding:8px 12px;border-radius:999px;color:var(--muted);font-weight:700;margin-bottom:12px}
+    .hero h2{margin:6px 0 10px;font-size:30px}
+    .hero p.lead{color:var(--muted);margin:0 0 16px}
+    .features{display:flex;gap:12px;flex-wrap:wrap}
+    .feature{background:rgba(255,255,255,0.02);padding:10px 12px;border-radius:12px;font-size:13px;color:var(--muted)}
+
+    /* Enroll form */
+    .card-form{background:linear-gradient(180deg,#071528, #061526);padding:18px;border-radius:12px}
+    .card-form label{display:block;font-size:13px;color:var(--muted);margin-bottom:6px}
+    .card-form input, .card-form select, .card-form textarea{width:100%;padding:10px;border-radius:8px;background:transparent;border:1px solid rgba(255,255,255,0.06);color:inherit}
+    .card-form button{width:100%;margin-top:12px;padding:10px;border-radius:10px;border:0;background:linear-gradient(90deg,var(--accent),#0369a1);font-weight:700}
+
+    /* Courses */
+    .section{margin:48px 0}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .course{background:var(--card);padding:18px;border-radius:14px}
+    .course h3{margin:0 0 8px}
+    .tags{display:flex;gap:8px;flex-wrap:wrap}
+    .tag{font-size:12px;padding:6px 8px;border-radius:999px;background:rgba(255,255,255,0.03)}
+
+    /* Testimonials */
+    .testi{display:flex;gap:14px;align-items:center}
+    .avatar{width:56px;height:56px;border-radius:999px;background:linear-gradient(180deg,#08334a,#021026);display:flex;align-items:center;justify-content:center}
+
+    /* Gallery */
+    .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+    .gallery img{width:100%;height:120px;object-fit:cover;border-radius:8px}
+
+    footer{border-top:1px solid rgba(255,255,255,0.03);padding:22px 0;margin-top:36px;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
+
+    /* Responsive */
+    @media (max-width:1000px){.hero{grid-template-columns:1fr 320px}}
+    @media (max-width:860px){.grid{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:repeat(2,1fr)}.hero{grid-template-columns:1fr}.container{padding:18px}}
+    @media (max-width:520px){.grid{grid-template-columns:1fr}.logo{width:48px;height:48px}.brand h1{font-size:15px}}
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true">
+          <!-- simple SDG monogram -->
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="64" height="64" rx="12" fill="url(#g)"/>
+            <defs>
+              <linearGradient id="g" x1="0" x2="1">
+                <stop offset="0" stop-color="#0ea5e9" />
+                <stop offset="1" stop-color="#073b66" />
+              </linearGradient>
+            </defs>
+            <g transform="translate(10,12)" fill="#fff">
+              <path d="M6 0h20v6H6z" opacity="0.95" />
+              <path d="M6 10h12v6H6z" opacity="0.8" />
+            </g>
+          </svg>
+        </div>
+        <div>
+          <h1>SDG CLASSES</h1>
+          <p>Trusted coaching • Personalized learning</p>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#courses">Courses</a>
+        <a href="#results">Results</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact" class="cta">Enroll Now</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-card">
+          <span class="kicker">New batches • Online & offline</span>
+          <h2>Get better grades with focused coaching from expert faculty</h2>
+          <p class="lead">Short batches, weekend revision sessions, mock tests and personalised doubt clearing — built for students who want results.</p>
+
+          <div class="features" style="margin-top:16px">
+            <div class="feature">Small batches (max 12)</div>
+            <div class="feature">Recorded classes available</div>
+            <div class="feature">Weekly tests & performance reports</div>
+            <div class="feature">Flexible timings</div>
+          </div>
+
+          <div style="margin-top:18px;display:flex;gap:12px;align-items:center">
+            <a href="#contact" class="cta" style="text-decoration:none">Enroll Free Trial</a>
+            <a href="#courses" style="color:var(--muted);text-decoration:none;font-weight:700">View Courses →</a>
+          </div>
+        </div>
+
+        <aside>
+          <div class="card-form">
+            <strong style="display:block;margin-bottom:10px">Book a free demo</strong>
+            <label for="name">Full name</label>
+            <input id="name" placeholder="Your name" />
+            <label for="phone">Phone / WhatsApp</label>
+            <input id="phone" placeholder="e.g. +91 98765 43210" />
+            <label for="course">Interested course</label>
+            <select id="course">
+              <option>Choose a course</option>
+              <option>Class 10 - Science</option>
+              <option>Class 12 - Maths</option>
+              <option>Foundation (Maths + Science)</option>
+              <option>Competitive exam coaching</option>
+            </select>
+            <label for="msg">Message (optional)</label>
+            <textarea id="msg" rows="3" placeholder="Best time to call"></textarea>
+            <button id="submitBtn">Request Demo</button>
+            <small style="display:block;margin-top:8px;color:var(--muted)">We will never share your info. This is a demo form (no backend).</small>
+          </div>
+        </aside>
+      </section>
+
+      <section id="courses" class="section">
+        <div style="display:flex;justify-content:space-between;align-items:end;margin-bottom:12px">
+          <div>
+            <h2 style="margin:0">Our Courses</h2>
+            <p style="margin:6px 0 0;color:var(--muted)">Structured curriculum, experienced teachers, proven results.</p>
+          </div>
+          <div style="color:var(--muted);font-weight:700">Starting from ₹499 / month</div>
+        </div>
+
+        <div class="grid">
+          <div class="course">
+            <h3>Class 10 — Science & Maths</h3>
+            <p style="color:var(--muted);margin:8px 0 12px">Focused concept building and exam strategy tailored for board success.</p>
+            <div class="tags"><span class="tag">Live classes</span><span class="tag">Doubt sessions</span><span class="tag">Mock tests</span></div>
+          </div>
+
+          <div class="course">
+            <h3>Class 12 — Physics, Chemistry, Maths</h3>
+            <p style="color:var(--muted);margin:8px 0 12px">Advanced problem solving, weekly assessments and rank improvement plans.</p>
+            <div class="tags"><span class="tag">Concept maps</span><span class="tag">Recordings</span><span class="tag">Performance reports</span></div>
+          </div>
+
+          <div class="course">
+            <h3>Foundation — JEE / NEET Prep</h3>
+            <p style="color:var(--muted);margin:8px 0 12px">Begin early with a structured foundation program and continuous evaluation.</p>
+            <div class="tags"><span class="tag">Mentorship</span><span class="tag">Problem bank</span><span class="tag">Weekly tests</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="results" class="section">
+        <h2>Recent Results</h2>
+        <p style="color:var(--muted);margin-top:6px">Students consistently improving: sample snapshots from recent batches.</p>
+
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px">
+          <div class="course" style="text-align:center">
+            <strong style="font-size:26px">98%</strong>
+            <p style="color:var(--muted);margin:6px 0 0">Avg score improvement</p>
+          </div>
+          <div class="course" style="text-align:center">
+            <strong style="font-size:26px">120+</strong>
+            <p style="color:var(--muted);margin:6px 0 0">Top ranks in city</p>
+          </div>
+          <div class="course" style="text-align:center">
+            <strong style="font-size:26px">500+</strong>
+            <p style="color:var(--muted);margin:6px 0 0">Happy students</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="section">
+        <h2>Gallery</h2>
+        <p style="color:var(--muted);margin-top:6px">Classroom moments, workshops and student interactions.</p>
+        <div class="gallery" style="margin-top:12px">
+          <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="classroom">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="students">
+          <img src="https://images.unsplash.com/photo-1529078155058-5d716f45d604?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="whiteboard">
+          <img src="https://images.unsplash.com/photo-1507668077129-56e32842fceb?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="workshop">
+        </div>
+      </section>
+
+      <section id="testimonials" class="section">
+        <h2>What students say</h2>
+        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:12px">
+          <div class="course testi">
+            <div style="flex:0 0 64px">
+              <div class="avatar">S</div>
+            </div>
+            <div>
+              <strong>Shreya K.</strong>
+              <p style="color:var(--muted);margin:8px 0 0">"SDG Classes helped me improve my scores quickly. The doubt sessions are very helpful."</p>
+            </div>
+          </div>
+
+          <div class="course testi">
+            <div style="flex:0 0 64px">
+              <div class="avatar">A</div>
+            </div>
+            <div>
+              <strong>Aditya P.</strong>
+              <p style="color:var(--muted);margin:8px 0 0">"Friendly teachers and focused tests — got my confidence back for boards."</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <h2>Contact & Location</h2>
+        <p style="color:var(--muted);margin-top:6px">Reach us for batch details, demo booking and counselling.</p>
+
+        <div style="display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:12px">
+          <div class="course">
+            <h3>Head Office</h3>
+            <p style="color:var(--muted);margin:8px 0">123 Learning Lane, Knowledge City<br/>Open: Mon - Sat, 9:00 AM - 7:00 PM</p>
+
+            <p style="margin-top:12px"><strong>Phone:</strong> +91 98765 43210<br/><strong>Email:</strong> hello@sdgclasses.example</p>
+
+            <div style="margin-top:12px">
+              <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.1163470937!2d72.7410994!3d19.0821978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6301b0b695f%3A0x6b0f7db0c4ab1df8!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1600000000000!5m2!1sen!2sin" width="100%" height="200" style="border:0;border-radius:8px" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+
+          <aside class="card-form">
+            <strong style="display:block;margin-bottom:10px">Message us</strong>
+            <label for="cname">Your name</label>
+            <input id="cname" />
+            <label for="cphone">Phone</label>
+            <input id="cphone" />
+            <label for="cmsg">Message</label>
+            <textarea id="cmsg" rows="4"></textarea>
+            <button id="sendBtn">Send Message</button>
+          </aside>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div style="font-size:13px">© <span id="year"></span> SDG CLASSES — All rights reserved.</div>
+      <div style="font-size:13px;color:var(--muted)">Created by Jaimin Rathod</div>
+    </footer>
+  </div>
+
+  <script>
+    // set current year
+    document.getElementById('year').innerText = new Date().getFullYear();
+
+    // demo form handlers (no backend)
+    document.getElementById('submitBtn').addEventListener('click', function(){
+      const name = document.getElementById('name').value || 'Student';
+      alert('Thanks, ' + name + '! We received your demo request. (This is a demo form.)');
+    });
+    document.getElementById('sendBtn').addEventListener('click', function(){
+      const name = document.getElementById('cname').value || 'Friend';
+      alert('Message sent. Thank you, ' + name + '! (Demo only)');
+    });
+  </script>
+</body>
+</html>
